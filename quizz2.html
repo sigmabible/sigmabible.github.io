@@ -1,0 +1,32 @@
+<HTML>
+
+    <HEAD>
+     <META HTTP-EQUIV="Content-Language" content="fr">
+     <META HTTP-EQUIV="Content-Type" content="text/html; charset=UTF-8">
+     <TITLE>Question 2 du sigma quizz</TITLE>
+    </HEAD>
+    
+    <BODY>
+    <H1>Question 2 du sigma quizz</H1>
+    <HR>
+    <FORM NAME="qcm2">
+    <B>Question:</B><BR>
+    Quelle est ta plus grande priorité ?<BR>
+    <B>Réponses :</B><BR>
+    <INPUT type="radio" name="choix">Les responsabilités</INPUT><BR>
+    <INPUT type="radio" name="choix">S'amuser</INPUT><BR>
+    <INPUT type="radio" name="choix">Apprendre des nouvelles choses</INPUT><BR>
+    <INPUT type="radio" name="choix">Les relations avec les autres</INPUT>
+    <BR><BR>
+    <INPUT type="button" name="bouton" value="Vérifier"
+     ONCLICK="if (document.qcm2.choix[2].checked) {
+        alert('Bonne réponse.') 
+        window.location.replace('/quizz3.html'); 
+    } else {
+        alert('Réponse fausse.')
+    }">
+    </INPUT>
+    </FORM>
+    <HR>
+  </BODY>
+  </HTML>

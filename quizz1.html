@@ -1,0 +1,32 @@
+<HTML>
+
+    <HEAD>
+     <META HTTP-EQUIV="Content-Language" content="fr">
+     <META HTTP-EQUIV="Content-Type" content="text/html; charset=UTF-8">
+     <TITLE>Question 1 du sigma quizz</TITLE>
+    </HEAD>
+    
+    <BODY>
+    <H1>Question 1 du sigma quizz</H1>
+    <HR>
+    <FORM NAME="qcm1">
+    <B>Question:</B><BR>
+    As-tu besoin de beaucoup pour être satisfait ?<BR>
+    <B>Réponses :</B><BR>
+    <INPUT type="radio" name="choix">Je ne suis jamais satisfait à 100%</INPUT><BR>
+    <INPUT type="radio" name="choix">Je suis un peu exigeant</INPUT><BR>
+    <INPUT type="radio" name="choix">J'ai besoin de beaucoup de choses</INPUT><BR>
+    <INPUT type="radio" name="choix">Je suis tout le temps satisfait</INPUT>
+    <BR><BR>
+    <INPUT type="button" name="bouton" value="Vérifier"
+     ONCLICK="if (document.qcm1.choix[1].checked) {
+        alert('Bonne réponse.') 
+        window.location.replace('/quizz2.html'); 
+    } else {
+        alert('Réponse fausse.')
+    }">
+    </INPUT>
+    </FORM>
+    <HR>
+</BODY>
+</HTML>

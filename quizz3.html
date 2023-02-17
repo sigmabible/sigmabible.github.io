@@ -1,0 +1,32 @@
+<HTML>
+
+    <HEAD>
+     <META HTTP-EQUIV="Content-Language" content="fr">
+     <META HTTP-EQUIV="Content-Type" content="text/html; charset=UTF-8">
+     <TITLE>Question 3 du sigma quizz</TITLE>
+    </HEAD>
+    
+    <BODY>
+    <H1>Question 3 du sigma quizz</H1>
+    <HR>
+    <FORM NAME="qcm3">
+    <B>Question:</B><BR>
+    Lors de rassemblements avec des amis, la famille, d'autres personnes...<BR>
+    <B>Réponses :</B><BR>
+    <INPUT type="radio" name="choix">Je dis quelque chose de stupide, comme d'habitude</INPUT><BR>
+    <INPUT type="radio" name="choix">Je prends l'initiative de commencer une conversation</INPUT><BR>
+    <INPUT type="radio" name="choix">J'attends que quelqu'un lance un sujet pour prendre part</INPUT><BR>
+    <INPUT type="radio" name="choix">Je suis intelligent et je n'aime pas me mêler de ce qui ne me regarde pas</INPUT>
+    <BR><BR>
+    <INPUT type="button" name="bouton" value="Vérifier"
+     ONCLICK="if (document.qcm3.choix[3].checked) {
+        alert('Bonne réponse.') 
+        window.location.replace('/quizz4.html'); 
+    } else {
+        alert('Réponse fausse.')
+    }">
+    </INPUT>
+    </FORM>
+    <HR>
+  </BODY>
+  </HTML>

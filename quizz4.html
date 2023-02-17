@@ -1,0 +1,32 @@
+<HTML>
+
+    <HEAD>
+     <META HTTP-EQUIV="Content-Language" content="fr">
+     <META HTTP-EQUIV="Content-Type" content="text/html; charset=UTF-8">
+     <TITLE>Question 4 du sigma quizz</TITLE>
+    </HEAD>
+    
+    <BODY>
+    <H1>Question 4 du sigma quizz</H1>
+    <HR>
+    <FORM NAME="qcm4">
+    <B>Question :</B><BR>
+    Comment traites-tu les problèmes ? <BR>
+    <B>Réponses :</B><BR>
+    <INPUT type="radio" name="choix">J'analyse soigneusement la situation</INPUT><BR>
+    <INPUT type="radio" name="choix">J'interviens seulement quand les autres n'y font pas face</INPUT><BR>
+    <INPUT type="radio" name="choix">J'attends qu'ils disparaissent d'eux mêmes</INPUT>
+  
+    <BR><BR>
+    <INPUT type="button" name="bouton" value="Vérifier"
+     ONCLICK="if (document.qcm4.choix[0].checked) {
+        alert('Vous avez reussi le quizz sigma et êtes devenus un sigma certifié. Cliquez sur ok pour retourner à la page de base') 
+        window.location.replace('/index.html'); 
+    } else {
+        alert('Réponse fausse.')
+    }">
+    </INPUT>
+    </FORM>
+    <HR>
+  </BODY>
+  </HTML>
